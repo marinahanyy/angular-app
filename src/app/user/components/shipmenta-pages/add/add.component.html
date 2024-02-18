@@ -1,0 +1,93 @@
+<div class="header">
+  <div class="header-search">
+      <i class="far fa-plus"></i>
+      <button type="button" class="add-students" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Posilka qo'shish</button>
+      <i class="far fa-search"></i>
+      <input type="text" placeholder="Search"/>
+  </div>
+</div>
+
+<div class="table-wrapper">
+  <div class="table-content">
+    <div class="table-container">
+      <table class="milestone-table">
+        <thead>
+          <tr class="nohover">
+            <th colspan="" class="table-header">
+              <p class="wrapper">Kuzatib borish kodi</p>
+            </th>
+            <th colspan="" class="table-header">
+              <p>Nomi</p>
+            </th>
+            <th colspan="" class="table-header">
+              <p class="price">Qiymati</p>
+            </th>
+            <th colspan="" class="table-header">
+              <p class="price">Qo'shilganlar</p>
+            </th>
+            <th colspan="" class="table-header">
+              <p class="price">Actions</p>
+            </th>
+          </tr>
+          
+        </thead>
+        <tbody>
+          <tr class="button" (click)="goToTask()">
+            <td>
+              ASGJ-NSHG-VCH5
+              <i class="fa-regular fa-copy"></i>
+            </td>
+            <td>Amazondan yangi kitoblar</td>
+            <td>360.00$</td>
+            <td>2 april,2023</td>
+            <td>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-pen-to-square"></i>
+              <i class="fa-solid fa-trash"></i>
+            </td>
+          </tr> 
+
+          <tr (click)="goToTask()">
+            <td>
+              ASGJ-NSHG-VCH5
+              <i class="fa-regular fa-copy"></i>
+            </td>
+            <td>Amazondan yangi kitoblar</td>
+            <td>360.00$</td>
+            <td>2 april,2023</td>
+            <td>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-pen-to-square"></i>
+              <i class="fa-solid fa-trash"></i>
+            </td>
+          </tr>
+
+          <tr (click)="goToTask()">
+            <td>
+              ASGJ-NSHG-VCH5
+              <i class="fa-regular fa-copy"></i>
+            </td>
+            <td>Amazondan yangi kitoblar</td>
+            <td>360.00$</td>
+            <td>2 april,2023</td>
+            <td>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-pen-to-square"></i>
+              <i class="fa-solid fa-trash"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="pagination">
+  <button class="prev-btn" disabled>&lt;</button>
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
+  <button class="next-btn">&gt;</button>
+</div>

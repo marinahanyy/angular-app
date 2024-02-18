@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="content">
+    <div class="left">
+      <div class="logo">
+        <img src="../../assets/images/user-cabinet/Ellipse 35.svg" alt="">
+      </div>
+      <div class="userName">
+        <h1>
+          John Smith
+        </h1>
+        <h3>ID: 15236578</h3>
+        <button class="search-button" (click)="showModal()">Search</button>
+      </div>
+
+      <nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+        <ng-container *nzModalContent>
+          <p>Content one</p>
+          <p>Content two</p>
+          <p>Content three</p>
+        </ng-container>
+      </nz-modal>
+
+      <div class="sideNav-links">
+        <div class="sidenav-text">
+          <div class="text">
+            <span routerLinkActive="active" [routerLink]="['parcels']" nz-icon nzType="appstore" nzTheme="outline"></span>
+            <h2  routerLinkActive="active" [routerLink]="['parcels']">Dashboard</h2>
+          </div>
+          <div class="text">
+            <span routerLinkActive="active" [routerLink]="['shipments']" nz-icon nzType="gift" nzTheme="outline"></span>
+            <h2  routerLinkActive="active" [routerLink]="['shipments']">Posilkalarim</h2>
+          </div>
+          <div class="text">
+            <span routerLinkActive="active" [routerLink]="['myAddress']" nz-icon nzType="environment" nzTheme="outline"></span>
+            <h2  routerLinkActive="active" [routerLink]="['myAddress']">Manzillarim</h2>
+          </div>
+          <div class="text">
+            <span routerLinkActive="active" [routerLink]="['settings']" nz-icon nzType="setting" nzTheme="outline"></span>
+            <h2  routerLinkActive="active" [routerLink]="['settings']">Sozlamalarim</h2>
+          </div>
+          <div class="text log-out">
+            <span routerLinkActive="active" nz-icon nzType="logout" nzTheme="outline"></span>
+            <h2>Chiqish</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-navbar">
+        <div class="box">
+          <p routerLinkActive="active" [routerLink]="['parcels']">+</p>
+          <p routerLinkActive="active" [routerLink]="['shipments']">+</p>
+          <div class="circle">
+              <p>+</p>
+          </div>
+          <p routerLinkActive="active" [routerLink]="['myAddress']">+</p>
+          <p routerLinkActive="active" [routerLink]="['settings']">+</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <ng-container>
+        <router-outlet>
+        </router-outlet>
+      </ng-container>
+    </div>
+  </div>
+</div>
+<!-- <div class="div mobile">
+  <div class="right">
+    <ng-container>
+      <router-outlet>
+      </router-outlet>
+    </ng-container>
+  </div>
+  <div class="box">
+      <p routerLinkActive="active" [routerLink]="['parcels']">+</p>
+      <p routerLinkActive="active" [routerLink]="['shipments']">+</p>
+      <div class="circle">
+          <p>+</p>
+      </div>
+      <p routerLinkActive="active" [routerLink]="['myAddress']">+</p>
+      <p routerLinkActive="active" [routerLink]="['settings']">+</p>
+  </div>
+</div> -->
+
