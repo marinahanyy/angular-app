@@ -3,7 +3,7 @@ pipeline {
  
     environment {
         DISCORD_WEBHOOK = credentials('discord-webhook')
-        GIT_URL = 'https://github.com/abbos1711/angular-project-ci-cd-gitlab-and-githubAction.git'
+        GIT_URL = 'https://github.com/ahmedwahid/angular-app.git'
         
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
         CONTAINER_NAME = 'angular'
@@ -15,7 +15,7 @@ pipeline {
     
         GIT_TOKEN = credentials('git-token')
         BRANCH_NAME = 'origin'
-//        BRANCH_NAME = 'main'
+//        BRANCH_NAME = 'master'
     }
     stages {
         stage('Clean Workspace') {
