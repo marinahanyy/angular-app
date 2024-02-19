@@ -8,9 +8,9 @@ pipeline {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
         CONTAINER_NAME = 'angular'
         REGISTRY_URL = '10449'
-       # SERVER_USERNAME = credentials('server-username')
-       # SERVER_IP = credentials('server-ip')
-       # SSH_CREDENTIALS = credentials('server-ssh')
+       // SERVER_USERNAME = credentials('server-username')
+       // SERVER_IP = credentials('server-ip')
+       // SSH_CREDENTIALS = credentials('server-ssh')
     
     
         GIT_TOKEN = credentials('git-token')
