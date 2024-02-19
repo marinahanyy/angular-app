@@ -13,7 +13,7 @@ pipeline {
        // SSH_CREDENTIALS = credentials('server-ssh')
     
     
-        GIT_TOKEN = credentials('git-token')
+       // GIT_TOKEN = credentials('git-token')
         BRANCH_NAME = 'origin'
 //        BRANCH_NAME = 'master'
     }
@@ -23,11 +23,11 @@ pipeline {
                 cleanWs()
             }
         }
-        stage('Clone Repository') {
-            steps {
-                git branch: BRANCH_NAME, url: GIT_URL, credentialsId: 'git-token'
-            }
-        }
+       // stage('Clone Repository') {
+         //   steps {
+           //     git branch: BRANCH_NAME, url: GIT_URL, credentialsId: 'git-token'
+           // }
+       // }
         stage('Build Application') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
