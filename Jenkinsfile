@@ -65,15 +65,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            discordSend(
-                description: "Jenkins Pipeline Build ${currentBuild.currentResult}",
-                link: env.GIT_URL,
-                result: currentBuild.currentResult,
-                title: JOB_NAME,
-                webhookURL: env.DISCORD_WEBHOOK
-            )
-        }
-    }
 }
