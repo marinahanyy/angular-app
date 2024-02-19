@@ -2,7 +2,7 @@ pipeline {
     agent any
  
     environment {
-        DISCORD_WEBHOOK = credentials('discord-webhook')
+        // DISCORD_WEBHOOK = credentials('discord-webhook')
         GIT_URL = 'https://github.com/ahmedwahid/angular-app.git'
         
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
